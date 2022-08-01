@@ -1,2 +1,3 @@
+# OCULTAMOS LA CARPETA node_modules Y EL FICHERO .env PARA QUE NO SE SUBAN A GIT
 /node_modules
 .env
