@@ -1,3 +1,4 @@
+//Definimos nuestra función seteadora de errores
 const setError = (code, message) => {
     const error = new Error;
     error.code = code;
@@ -5,6 +6,7 @@ const setError = (code, message) => {
     return error;
 }
 
+//La exportamos para poder utilizarla en cualquier punto de nuestro servidor
 module.exports = {
     setError
 }
