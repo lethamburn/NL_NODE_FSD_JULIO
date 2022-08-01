@@ -6,13 +6,11 @@ const { setError } = require('../../helpers/utils');
 //Definimos la función que nos recuperará todos los elementos de la colección
 const getAll = async (req, res, next) => {
     try {
-        const page = req.query.page ? parseInt(req.query.page) : 1;
-        const skip = (page - 1) * 20;
-        const elements = await Element.find().skip(skip).limit(20);
+        const elements = await Element.find()
         return res.json({
             status: 200,
             message: 'Recovered all elements',
-            data: { element: element }
+            data: { elements: elements }
         });
     } catch (error) {
         return next(setError(500, 'Failed all codes'));
