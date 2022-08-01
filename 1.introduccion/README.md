@@ -1,5 +1,6 @@
 # Superhero API - Marvel & DC
 
+- Creamos el package.json con npm init -y
 - Creamos nuestra estructura de carpetas y ficheros según Notion
 - Instalamos las dependencias
 - Completamos el package.json con los scripts
