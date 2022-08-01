@@ -22,9 +22,9 @@ app.use((req, res, next) => {
 });
 // Activamos las cors para definir los origenes de las llamadas a nuestra API
 app.use(cors({ origin: (origin, callback) => callback(null, true), credentials: true }));
-// Le indicamos que la información de nuestra API será en JSON
+// Le indicamos que la información de nuestra API será en JSON con un limite de 1 mb
 app.use(express.json({ limit: '1mb' }))
-// Y además codificada a través de llamadas a través de URLs
+// Le indicamos que la información que recibirá a través de una URL tendrá un limite de 1mb
 app.use(express.urlencoded({ limit: '1mb', extended: true }));
 // Inicializamos la ruta en api/element que implementará las rutas importadas arriba
 app.use('/api/element', ElementRoutes);
