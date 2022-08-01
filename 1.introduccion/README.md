@@ -3,6 +3,7 @@
 - Creamos nuestra estructura de carpetas y ficheros según Notion
 - Instalamos las dependencias
 - Completamos el package.json con los scripts
+- Insertamos la URI de mongo en el .env junto al puerto
 - Creamos la conexión a la base de datos en db.js
 - Definimos el controlador de errores en utils.js
 - Creamos el modelo del elemento
