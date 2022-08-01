@@ -1,23 +1,6 @@
 # Superhero API - Marvel & DC
 
-- Creamos nuestra estructura de carpetas y ficheros:
-|_📁 name_project
-	|_📁 src
-		|_📁 api -> Carpeta que define modelos-controladores-rutas
-			|_📁 elements
-					📝 element.controller.js
-					📝 element.model.js
-					📝 element.routes.js
-		|_📁 helpers -> Carpeta funciones auxiliares para dejar el index.js limpio
-				📝 db.js
-				📝 utils.js
-		📝 index.js -> Fichero disparador o inicializador
-	📝 .env
-	📝 .gitignore
-	📝 LICENSE
-	📝 package.json
-	📝 README.md
-
+- Creamos nuestra estructura de carpetas y ficheros según Notion
 - Instalamos las dependencias
 - Completamos el package.json con los scripts
 - Creamos la conexión a la base de datos en db.js
